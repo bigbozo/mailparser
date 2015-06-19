@@ -1,0 +1,17 @@
+{
+    "config": {
+	    "vendor-dir": "../vendor"
+    },
+
+    "name": "bigbozo/mailparser",
+    "description": "Parses mailstreams",
+    "authors": [
+        {
+            "name": "Bugi Goertz",
+            "email": "bugi@joboland.de"
+        }
+    ],
+    "require": {
+    	"php-mime-mail-parser/php-mime-mail-parser": "2.1.0"
+    }
+}
