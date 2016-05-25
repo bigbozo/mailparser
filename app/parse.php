@@ -18,7 +18,8 @@ foreach($path as $mail) {
 	$html = $Parser->getMessageBody('html');
 	$htmlEmbedded = $Parser->getMessageBody('htmlEmbedded'); //HTML Body included data
 
-	$attach_dir = __DIR__;
+    if (!is_dir('/data/attachments')) mkdir('/data/attachments',0777,1);
+	$attach_dir = '/data/attachments';
 	$Parser->saveAttachments($attach_dir);
 
 	echo "
